@@ -3,7 +3,7 @@ package quebracabeca;
 
 public class PecaMeio extends Peca {
     
-    public PecaMeio(String borda) {
+    public PecaMeio(int borda) {
         super(borda);
     }
     

@@ -2,17 +2,17 @@
 package quebracabeca;
 
 public abstract class Peca {
-    private String borda;
+    private int borda;
 
-    public Peca(String borda) {
+    public Peca(int borda) {
         this.borda = borda;
     }
 
-    public String getBorda() {
+    public int getBorda() {
         return borda;
     }
 
-    public void setBorda(String borda) {
+    public void setBorda(int borda) {
         this.borda = borda;
     }
 
