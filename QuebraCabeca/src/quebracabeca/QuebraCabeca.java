@@ -2,7 +2,6 @@
 package quebracabeca;
 
 import java.util.Scanner;
-
 /**
  *
  * @author Isabelle Lopes
@@ -60,29 +59,29 @@ public class QuebraCabeca {
             System.out.println("Encaixe agora as pecas da lateral 9 - 10 - 11 - 12 - 13 - 14 - 16");
             int input = sc.nextInt(); 
             
-            if (input == pLateral1.getBorda()) {
-                System.out.println("Peca 9 encaixada!");
-            } else if (input == pLateral2.getBorda()) {
-                System.out.println("Peca 10 encaixada!");
-            } else if (input == pLateral3.getBorda()) {
-                System.out.println("Peca 11 encaixada!");
-            } else if (input == pLateral4.getBorda()) {
-                System.out.println("Peca 12 encaixada!");
-            } else if (input == pLateral5.getBorda()) {
-                System.out.println("Peca 13 encaixada!");
-            }else if(input == pLateral6.getBorda()){
-                System.out.println("Peca 14 encaixada!");
-            }else if(input == pLateral7.getBorda()){
-                System.out.println("Peca 15 encaixada!");
-            }else if(input == pLateral8.getBorda()){
-                System.out.println("Peca 16 encaixada!");
+            if (input == pLateral1.getBorda() && pBorda1.getBorda() == 9) {
+                System.out.println("Peca 9 encaixada com Peca Borda 1!");
+            } else if (input == pLateral2.getBorda() && pBorda2.getBorda() == 10) {
+                System.out.println("Peca 10 encaixada com Peca Borda 3!");
+            } else if (input == pLateral3.getBorda() && pBorda2.getBorda() == 11) {
+                System.out.println("Peca 11 encaixada com Peca Borda 3!");
+            } else if (input == pLateral4.getBorda() && pBorda4.getBorda() == 12) {
+                System.out.println("Peca 12 encaixada com Peca Borda 7!");
+            } else if (input == pLateral5.getBorda() && pBorda4.getBorda() == 13) {
+                System.out.println("Peca 13 encaixada com Peca Borda 7!");
+            }else if(input == pLateral6.getBorda() && pBorda3.getBorda() == 14){
+                System.out.println("Peca 14 encaixada com Peca Borda 5!");
+            }else if(input == pLateral7.getBorda() && pBorda3.getBorda() == 15){
+                System.out.println("Peca 15 encaixada com Peca Borda 5!");
+            }else if(input == pLateral8.getBorda() && pBorda1.getBorda() == 16){
+                System.out.println("Peca 16 encaixada com Peca Borda 1!");
             } else {
                 System.out.println("Nao esta na posicao correta...");
             } 
             
             if (pLateral1.getBorda() == 9 && pLateral2.getBorda() == 10 && pLateral3.getBorda() == 11 && pLateral4.getBorda() == 12 &&
                     pLateral5.getBorda() == 13 && pLateral6.getBorda() == 14 && pLateral7.getBorda() == 15 && pLateral8.getBorda() == 16) {
-                System.out.println("Todas as pecas da borda foram encaixadas corretamente!");
+                System.out.println("Todas as pecas da borda lateral foram encaixadas corretamente!");
                 break; 
             }
         }
